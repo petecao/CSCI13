@@ -20,9 +20,10 @@ jar {
     from sourceSets.main.allSource
 }
 
-task testsJar(type: Jar) {
+task testsJar(type: Jar, dependsOn: test) {
     classifier = 'tests'
-    from sourceSets.test.allSource+testReportDir
+    from sourceSets.test.allSource
+    from testReportDir
 }
 
 artifacts {
