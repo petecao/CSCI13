@@ -56,6 +56,22 @@ public class LineTest {
         line.add(new Point(3.0,4.0));
         line.add(new Point(8.0,-8.0));
         line.add(new Point(-8,-8));
-        assertEquals("testing add()", 6, line.size(), 0.0);
+        assertEquals("testing size()", 6D, line.size(), 0.0);
+    }
+
+    /**
+     * Testing clear() method
+     */
+    @Test
+    public void clear() {
+        Line line = new Line();
+        line.add(new Point(1.5,2.5));
+        line.add(new Point(0.0,2.5));
+        line.add(new Point(0.0,0.0));
+        line.add(new Point(3.0,4.0));
+        line.add(new Point(8.0,-8.0));
+        line.add(new Point(-8,-8));
+        line.clear();
+        assertEquals("testing clear()", 0D, line.size(), 0.0);
     }
 }

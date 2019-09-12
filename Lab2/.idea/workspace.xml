@@ -9,14 +9,16 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/src/LineTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/src/LineTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/Lab2-1.0-tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/Lab2-1.0-tests.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/Lab2-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/Lab2-1.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/src.LineTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/src.LineTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/src.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/src.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-src.LineTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-src.LineTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/src/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/src/Line.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/src/LineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/src/LineTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,6 +31,37 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Lab2" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Lab2" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Lab2" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -75,7 +108,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.LineTest.add">
+  <component name="RunManager" selected="Gradle.Lab2 [build]">
     <configuration name="Lab2 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -154,12 +187,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PointTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LineTest.size" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;src.PointTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;src.LineTest.size&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -176,11 +209,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.LineTest.add" />
-        <item itemvalue="Gradle.LineTest" />
-        <item itemvalue="Gradle.PointTest" />
         <item itemvalue="Gradle.Lab2 [build]" />
         <item itemvalue="Gradle.Lab2 [clean]" />
+        <item itemvalue="Gradle.LineTest" />
+        <item itemvalue="Gradle.LineTest.size" />
+        <item itemvalue="Gradle.LineTest.add" />
       </list>
     </recent_temporary>
   </component>
@@ -196,6 +229,7 @@
       <updated>1567708943224</updated>
       <workItem from="1567708945631" duration="1994000" />
       <workItem from="1568255397099" duration="4048000" />
+      <workItem from="1568259730336" duration="398000" />
     </task>
     <servers />
   </component>
