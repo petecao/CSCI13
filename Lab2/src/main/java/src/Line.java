@@ -6,8 +6,7 @@ import java.util.List;
 /**
  * Line class, a container for points
  */
-public class Line
-{
+public class Line {
 
     private final List<Point> myLine;
 
@@ -38,14 +37,17 @@ public class Line
      * @return the length of the line
      */
     public double length() {
-        return myLine.size();
+        double length = 0;
+        for (int i = 0; i < myLine.size() - 1; i++) {
+            length += myLine.get(i).distance(myLine.get(i+1));
+        }
+        return length;
     }
 
     /**
      * @return the size of the line
      */
-    public int size()
-    {
-        return 0;
+    public int size() {
+        return myLine.size();
     }
 }
