@@ -79,4 +79,22 @@ public class PointTest {
         Point point = new Point(-3.0, 4.0);
         assertEquals("testing distance()", 0.0D, point.distance(new Point(-3.0, 4.0)), 0.0);
     }
+
+    /**
+     * Test the toString() method with a default Point
+     */
+    @Test
+    public void toStringDefault() {
+        Point point = new Point();
+        assertEquals("testing toString()", "(0.0,0.0)", point.toString());
+    }
+
+    /**
+     * Test the toString() method with a nondefault Point
+     */
+    @Test
+    public void toStringNonDefault() {
+        Point point = new Point(3.0,4.0);
+        assertEquals("testing toString()", "(3.0,4.0)", point.toString());
+    }
 }
