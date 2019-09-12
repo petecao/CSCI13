@@ -38,7 +38,7 @@ public class Line {
      */
     public double length() {
         double length = 0;
-        for (int i = 0; i < myLine.size() - 1; i++) {
+        for (int i = 0; i < myLine.size() - 1; i++) { //iterates through the list and gets the distance between 2 consecutive points and adds it up, keeping a running sum
             length += myLine.get(i).distance(myLine.get(i+1));
         }
         return length;
@@ -50,4 +50,6 @@ public class Line {
     public int size() {
         return myLine.size();
     }
+
+
 }
