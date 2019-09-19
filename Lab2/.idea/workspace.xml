@@ -6,21 +6,16 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/src/Line.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/src/Line.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/src/LineTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/src/LineTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/Lab2-1.0-tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/Lab2-1.0-tests.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/Lab2-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/Lab2-1.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/src.LineTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/src.LineTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/src.PointTest.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/src.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/src.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-src.LineTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-src.LineTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-src.PointTest.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/src/LineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/src/LineTest.java" afterDir="false" />
     </list>
@@ -126,7 +121,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.LineTest.iteratorNext">
+  <component name="RunManager" selected="Gradle.Lab2 [build]">
     <configuration name="Lab2 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -139,6 +134,25 @@
         <option name="taskNames">
           <list>
             <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Lab2 [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -166,12 +180,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="LineTest.iteratorEmpty" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LineTest.iteratorEndofList" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;src.LineTest.iteratorEmpty&quot;" />
+        <option name="scriptParameters" value="--tests &quot;src.LineTest.iteratorEndofList&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -186,32 +200,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="LineTest.iteratorNext" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PointTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;src.LineTest.iteratorNext&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="LineTest.iteratorOne" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;src.LineTest.iteratorOne&quot;" />
+        <option name="scriptParameters" value="--tests &quot;src.PointTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -228,11 +222,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.LineTest.iteratorNext" />
-        <item itemvalue="Gradle.LineTest.iteratorOne" />
-        <item itemvalue="Gradle.LineTest.iteratorEmpty" />
-        <item itemvalue="Gradle.LineTest" />
         <item itemvalue="Gradle.Lab2 [build]" />
+        <item itemvalue="Gradle.Lab2 [clean]" />
+        <item itemvalue="Gradle.PointTest" />
+        <item itemvalue="Gradle.LineTest" />
+        <item itemvalue="Gradle.LineTest.iteratorEndofList" />
       </list>
     </recent_temporary>
   </component>
@@ -250,7 +244,7 @@
       <workItem from="1568255397099" duration="4048000" />
       <workItem from="1568259730336" duration="1459000" />
       <workItem from="1568855392564" duration="47000" />
-      <workItem from="1568855751764" duration="5302000" />
+      <workItem from="1568855751764" duration="5784000" />
     </task>
     <servers />
   </component>

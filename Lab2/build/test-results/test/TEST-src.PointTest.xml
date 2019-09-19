@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="src.PointTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2019-09-19T03:35:24" hostname="RC-V103-26" time="0.004">
+  <properties/>
+  <testcase name="toStringNonDefault" classname="src.PointTest" time="0.001"/>
+  <testcase name="distanceDefaultParameter" classname="src.PointTest" time="0.0"/>
+  <testcase name="distanceDefaultOutside" classname="src.PointTest" time="0.0"/>
+  <testcase name="getXDefault" classname="src.PointTest" time="0.001"/>
+  <testcase name="distanceSamePoint" classname="src.PointTest" time="0.0"/>
+  <testcase name="distanceDifferentPoints" classname="src.PointTest" time="0.0"/>
+  <testcase name="getXRandomPoint" classname="src.PointTest" time="0.0"/>
+  <testcase name="toStringDefault" classname="src.PointTest" time="0.0"/>
+  <testcase name="getYRandomPoint" classname="src.PointTest" time="0.001"/>
+  <testcase name="getYDefault" classname="src.PointTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
