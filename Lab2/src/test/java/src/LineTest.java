@@ -2,7 +2,9 @@ package src;
 
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
+import java.util.Iterator;
+
+import static org.junit.Assert.*;
 
 /**
  * Line testing
@@ -79,7 +81,50 @@ public class LineTest {
      * Testing iterator() method
      */
     @Test
-    public void iterator() {
+    public void iteratorEmpty() {
+        Line line = new Line();
+        Iterator iterator = line.iterator();
 
+        assertFalse("iterator empty", iterator.hasNext());
+    }
+
+    /**
+     * Testing iterator() method
+     */
+    @Test
+    public void iteratorOne() {
+        Line line = new Line();
+        Point p = new Point();
+        line.add(p);
+        Iterator iterator = line.iterator();
+
+        assertTrue("iterator one", iterator.hasNext());
+    }
+
+    /**
+     * Testing iterator() method
+     */
+    @Test
+    public void iteratorNext() {
+        Line line = new Line();
+        Point p = new Point();
+        line.add(p);
+        Iterator iterator = line.iterator();
+
+        assertEquals("iterator next", p,  iterator.next());
+    }
+
+    /**
+     * Testing iterator() method
+     */
+    @Test
+    public void iterator() {
+        Line line = new Line();
+        line.add(new Point(1.5,2.5));
+        line.add(new Point(0.0,2.5));
+        line.add(new Point(0.0,0.0));
+        line.add(new Point(3.0,4.0));
+        line.add(new Point(8.0,-8.0));
+        line.add(new Point(-8,-8));
     }
 }

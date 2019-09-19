@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="src.LineTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-09-12T03:52:04" hostname="RC-V103-26" time="0.006">
+<testsuite name="src.LineTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-09-19T03:25:49" hostname="RC-V103-26" time="0.009">
   <properties/>
-  <testcase name="add" classname="src.LineTest" time="0.005"/>
-  <testcase name="size" classname="src.LineTest" time="0.0"/>
-  <testcase name="lengthOnePoint" classname="src.LineTest" time="0.0"/>
-  <testcase name="clear" classname="src.LineTest" time="0.0"/>
-  <testcase name="lengthSixPoints" classname="src.LineTest" time="0.0"/>
+  <testcase name="iteratorNext" classname="src.LineTest" time="0.009"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
