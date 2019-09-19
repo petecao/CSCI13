@@ -74,4 +74,12 @@ public class LineTest {
         line.clear();
         assertEquals("testing clear()", 0D, line.size(), 0.0);
     }
+
+    /**
+     * Testing iterator() method
+     */
+    @Test
+    public void iterator() {
+
+    }
 }
