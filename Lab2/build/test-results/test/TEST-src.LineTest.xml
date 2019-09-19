@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="src.LineTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2019-09-19T03:35:24" hostname="RC-V103-26" time="0.011">
+<testsuite name="src.LineTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2019-09-19T03:45:24" hostname="RC-V103-26" time="0.01">
   <properties/>
-  <testcase name="iteratorEndofList" classname="src.LineTest" time="0.008"/>
+  <testcase name="iteratorEndofList" classname="src.LineTest" time="0.007"/>
   <testcase name="iteratorEmpty" classname="src.LineTest" time="0.0"/>
   <testcase name="add" classname="src.LineTest" time="0.0"/>
-  <testcase name="size" classname="src.LineTest" time="0.001"/>
+  <testcase name="size" classname="src.LineTest" time="0.0"/>
   <testcase name="lengthOnePoint" classname="src.LineTest" time="0.0"/>
   <testcase name="clear" classname="src.LineTest" time="0.0"/>
   <testcase name="iteratorNext" classname="src.LineTest" time="0.0"/>

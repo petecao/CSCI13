@@ -78,6 +78,10 @@ public class LineTest {
     }
 
     /**
+     * Beginning of week 4, worked on week 4 with Aman
+     */
+
+    /**
      * Testing iterator.hasNext() method on an empty line
      */
     @Test
@@ -90,6 +94,7 @@ public class LineTest {
 
     /**
      * Testing iterator.hasNext() method with one point
+     *
      */
     @Test
     public void iteratorOne() {
