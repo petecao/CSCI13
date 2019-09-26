@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="src.PointDoubleTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-09-26T02:20:58" hostname="RC-V103-26" time="0.007">
+  <properties/>
+  <testcase name="outputLine" classname="src.PointDoubleTest" time="0.006"/>
+  <testcase name="getX" classname="src.PointDoubleTest" time="0.0"/>
+  <testcase name="getY" classname="src.PointDoubleTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
