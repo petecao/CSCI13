@@ -75,7 +75,6 @@ public class InfixToPostfix {
              * evaluate
              */
             if (token.length() > 0) {
-                System.out.println(token);
                 switch (token) {
                     case "(":
                         operatorStack.push(token);
