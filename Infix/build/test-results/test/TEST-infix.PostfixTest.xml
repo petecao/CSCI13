@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="infix.PostfixTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-10-03T03:28:43" hostname="RC-V103-26" time="0.002">
+<testsuite name="infix.PostfixTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2019-10-10T03:03:47" hostname="RC-V103-26" time="0.016">
   <properties/>
-  <testcase name="testConvertToPostfix" classname="infix.PostfixTest" time="0.002"/>
+  <testcase name="zeroDivisionTest" classname="infix.PostfixTest" time="0.01"/>
+  <testcase name="missingOperatorTest" classname="infix.PostfixTest" time="0.0"/>
+  <testcase name="addTest" classname="infix.PostfixTest" time="0.0"/>
+  <testcase name="tooLittleOperandsTest" classname="infix.PostfixTest" time="0.001"/>
+  <testcase name="tooManyOperandsTest" classname="infix.PostfixTest" time="0.0"/>
+  <testcase name="nonOperatorTest" classname="infix.PostfixTest" time="0.0"/>
+  <testcase name="subtractTest" classname="infix.PostfixTest" time="0.0"/>
+  <testcase name="emptyExpressionTest" classname="infix.PostfixTest" time="0.0"/>
+  <testcase name="badAddTest" classname="infix.PostfixTest" time="0.001"/>
+  <testcase name="InvalidOperatorTest" classname="infix.PostfixTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
