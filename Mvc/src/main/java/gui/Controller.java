@@ -1,5 +1,9 @@
 package gui;
 
+import infix.InfixToPostfix;
+import infix.Postfix;
+import infix.PostfixException;
+
 /**
  * Controller class. The controller class creates the required models and controls the
  * action between the models and the view.
@@ -10,7 +14,7 @@ class Controller {
     /**
      * Constructor
      * <p>
-     * The constructor instantiates any required postalCode model
+     * The constructor instantiates any required model
      */
     Controller() {
         // empty for now
@@ -19,8 +23,9 @@ class Controller {
     /**
      * Perform evaluation
      */
-    void evaluate(String expression) {
-        view.setOutputTextField(expression);
+    void evaluate(String expression) throws PostfixException {
+
+        view.setOutputTextField(Double.toString(Postfix.eval(InfixToPostfix.convertToPostfix(expression))));
     }
 
     /**

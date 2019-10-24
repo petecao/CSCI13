@@ -1,6 +1,7 @@
 package gui;
 
 
+import infix.PostfixException;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -34,14 +35,20 @@ class View {
         // input text field
         textInputField = new TextField();
         textInputField.setText("");
-        textInputField.setMaxWidth(100);
-        textInputField.setOnAction(event -> controller.evaluate(textInputField.getText()));
+        textInputField.setMaxWidth(300);
+        textInputField.setOnAction(event -> {
+            try {
+                controller.evaluate(textInputField.getText());
+            } catch (PostfixException e) {
+                setOutputTextField(e.getMessage());
+            }
+        });
         panel.getChildren().add(textInputField);
 
         // output text field
         textOutputField = new TextField();
         textOutputField.setText("");
-        textOutputField.setMaxWidth(100);
+        textOutputField.setMaxWidth(300);
         panel.getChildren().add(textOutputField);
 
         Button button = new Button("Clear");
