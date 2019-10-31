@@ -18,6 +18,9 @@ public class Main extends Application {
         Application.launch(args);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void start(Stage primaryStage) {
         // we need a controller
@@ -25,7 +28,6 @@ public class Main extends Application {
 
         // we need a view and need to tell the controller about the new view
         View view = new View(controller);
-        controller.setView(view);
 
         // get the scene and display
         primaryStage.setScene(view.getScene());

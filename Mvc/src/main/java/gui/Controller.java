@@ -3,13 +3,14 @@ package gui;
 import infix.InfixToPostfix;
 import infix.Postfix;
 import infix.PostfixException;
+import sun.java2d.Disposer;
 
 /**
  * Controller class. The controller class creates the required models and controls the
  * action between the models and the view.
  */
 class Controller {
-    private View view;
+    private final StringBuilder expressionBuilder;
 
     /**
      * Constructor
@@ -17,23 +18,44 @@ class Controller {
      * The constructor instantiates any required model
      */
     Controller() {
-        // empty for now
+        expressionBuilder = new StringBuilder();
     }
 
     /**
      * Perform evaluation
      */
-    void evaluate(String expression) throws PostfixException {
-
-        view.setOutputTextField(Double.toString(Postfix.eval(InfixToPostfix.convertToPostfix(expression))));
+    void evaluate() {
+        String expression = expressionBuilder.toString();
+        clearExpression();
+        String result;
+        try {
+            result = Double.toString(Postfix.eval(InfixToPostfix.convertToPostfix(expression)));
+        } catch (PostfixException e) {
+            result = e.getMessage();
+        }
+        expressionBuilder.append(result);
     }
 
     /**
-     * Set the view
+     * Add to the expression builder
      *
-     * @param view our gui view
+     * @param value string to add, should be a single character
      */
-    void setView(View view) {
-        this.view = view;
+    void addToExpression(String value) {
+        expressionBuilder.append(value);
+    }
+
+    /**
+     * @return current expression
+     */
+    String getExpression() {
+        return expressionBuilder.toString();
+    }
+
+    /**
+     * Clear expression
+     */
+    void clearExpression() {
+        expressionBuilder.setLength(0);
     }
 }
