@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e939fa9-0465-4f45-b43b-5afccaa7e870" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileContent/fileContent.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/gui/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/gui/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/gui/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/gui/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/gui/View.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/gui/View.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/mvc-1.0-SNAPSHOT-tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/mvc-1.0-SNAPSHOT-tests.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/mvc-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/mvc-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/infix.InfixTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/infix.InfixTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/infix.PostfixTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/infix.PostfixTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/infix.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/infix.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-infix.InfixTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-infix.InfixTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-infix.PostfixTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-infix.PostfixTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/View.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +96,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.Mvc [build]">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -412,7 +390,8 @@
       <option name="presentableId" value="Default" />
       <updated>1571881030066</updated>
       <workItem from="1571881031629" duration="3456000" />
-      <workItem from="1572484745977" duration="7270000" />
+      <workItem from="1572484745977" duration="8010000" />
+      <workItem from="1573095623069" duration="594000" />
     </task>
     <servers />
   </component>
