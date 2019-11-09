@@ -64,7 +64,7 @@ public class GovermentWeather implements Weather {
 
     @Override
     public String getZipCode() {
-        return null;
+        return zipCode;
     }
 
     @Override
