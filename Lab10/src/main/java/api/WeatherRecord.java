@@ -7,6 +7,7 @@ public class WeatherRecord {
     private String period;
     private String temp;
     private String weather;
+    private String tempLabel;
     private String text;
     private String iconLink;
 
@@ -19,6 +20,7 @@ public class WeatherRecord {
         this.weather = null;
         this.text = null;
         this.iconLink = null;
+        this.tempLabel = null;
     }
 
     /**
@@ -36,6 +38,7 @@ public class WeatherRecord {
         this.weather = weather;
         this.text = text;
         this.iconLink = iconLink;
+        this.tempLabel = tempLabel;
     }
 
     public String getPeriod() {
@@ -76,5 +79,11 @@ public class WeatherRecord {
 
     public void setIconLink(String iconLink) {
         this.iconLink = iconLink;
+    }
+
+    public String getTempLabel() {return tempLabel;}
+
+    public void setTempLabel(String tempLabel) {
+        this.tempLabel = tempLabel;
     }
 }

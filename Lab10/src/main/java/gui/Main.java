@@ -12,8 +12,9 @@ public class Main {
         LocationFactory locationFactory = NominatimLocationFactory.getInstance();
 
         try {
-            Location location = locationFactory.getLocation("95650");
+            Location location = locationFactory.getLocation("95843");
 
+            System.out.println("zip code = " + location.getZipcode());
             System.out.println("lat = " + location.getLatitude());
             System.out.println("lon = " + location.getLongitude());
 
@@ -31,7 +32,8 @@ public class Main {
             for (WeatherRecord entry : weatherData) {
 
                 System.out.println("Period = " + entry.getPeriod());
-                System.out.println("temp = " + entry.getTemp());
+                System.out.println(entry.getTempLabel() + " = " + entry.getTemp());
+                System.out.println("weather = " + entry.getWeather());
 
             }
 

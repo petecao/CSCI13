@@ -16,6 +16,7 @@ public class GovermentWeather implements Weather {
     private final List<WeatherRecord> weatherData;
     private String zipCode;
     private final CopyOnWriteArrayList<Listener> listeners = new CopyOnWriteArrayList<>();
+
     /**
      * Constructor
      */
@@ -23,6 +24,9 @@ public class GovermentWeather implements Weather {
         weatherData = new ArrayList<>();
     }
 
+    /**
+     * @inheritDoc
+     */
     @Override
     public void refreshData(String zipCode) throws IOException {
 
@@ -56,22 +60,37 @@ public class GovermentWeather implements Weather {
         for (JsonElement element : weather) {
             weatherData.get(index).setWeather(element.getAsString());
             index++;
+        }
 
+        JsonArray tempLabel = jsonRoot.getAsJsonObject().get("time").getAsJsonObject().get("tempLabel").getAsJsonArray();
+        index = 0;
+        for (JsonElement element : tempLabel) {
+            weatherData.get(index).setTempLabel(element.getAsString());
+            index++;
         }
 
 
     }
 
+    /**
+     * @inheritDoc
+     */
     @Override
     public String getZipCode() {
         return zipCode;
     }
 
+    /**
+     * @inheritDoc
+     */
     @Override
     public List<WeatherRecord> getWeatherData() {
         return weatherData;
     }
 
+    /**
+     * @inheritDoc
+     */
     public void addListener(Listener listener) {
         synchronized (listeners) {
             if (!listeners.contains(listener)) {
@@ -80,6 +99,10 @@ public class GovermentWeather implements Weather {
         }
     }
 
+
+    /**
+     * @inheritDoc
+     */
     @Override
     public void removeListener(Listener listener) {
         synchronized (listeners) {
