@@ -1,5 +1,6 @@
 package api;
 
+import java.io.IOException;
 import java.util.List;
 
 /**
@@ -11,7 +12,7 @@ public interface Weather {
      *
      * @param zipCode zip code
      */
-    void refreshData(String zipCode);
+    void refreshData(String zipCode) throws IOException;
 
     /**
      * Get the current zip code

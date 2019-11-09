@@ -41,7 +41,7 @@ public class GoogleLocationFactory implements LocationFactory {
 
         String json = getLocationJson(zipCode);
 
-        JsonElement jseRoot = getJsonElement(json.toString().trim());
+        JsonElement jseRoot = getJsonElement(json);
 
         double lat = jseRoot.getAsJsonObject().get("results").getAsJsonArray().get(0).getAsJsonObject().get("geometry")
                 .getAsJsonObject().get("location").getAsJsonObject().get("lat").getAsDouble();

@@ -60,7 +60,7 @@ public class NominatimLocationFactory implements LocationFactory {
         StringBuilder json = new StringBuilder();
 
         String urlString = URLEncoder.encode(zipCode, "UTF-8");
-        URL url = new URL("https://nominatim.openstreetmap.org/search/" + urlString + "?format=json");
+        URL url = new URL("https://nominatim.openstreetmap.org/search?postalcode=" + urlString + "&country=usa&format=json");
         try (BufferedReader rd = new BufferedReader(new InputStreamReader(url.openStream()))) {
             String line;
             while ((line = rd.readLine()) != null) {
