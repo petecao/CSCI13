@@ -85,8 +85,9 @@ public class NominatimLocationFactory implements LocationFactory {
 
         double lat = jseRoot.getAsJsonArray().get(0).getAsJsonObject().get("lat").getAsDouble();
         double lon = jseRoot.getAsJsonArray().get(0).getAsJsonObject().get("lon").getAsDouble();
+        String cityState = jseRoot.getAsJsonArray().get(0).getAsJsonObject().get("display_name").getAsString();
 
-        return new Location(lat, lon, zipCode);
+        return new Location(lat, lon, zipCode, cityState);
     }
 
     /**

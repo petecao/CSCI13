@@ -15,8 +15,18 @@ public class Main {
             Location location = locationFactory.getLocation("95843");
 
             System.out.println("zip code = " + location.getZipcode());
+            System.out.println("location = " + location.getCityState());
             System.out.println("lat = " + location.getLatitude());
             System.out.println("lon = " + location.getLongitude());
+            System.out.println();
+
+            location = locationFactory.getLocation("95111");
+
+            System.out.println("zip code = " + location.getZipcode());
+            System.out.println("location = " + location.getCityState());
+            System.out.println("lat = " + location.getLatitude());
+            System.out.println("lon = " + location.getLongitude());
+            System.out.println();
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -25,8 +35,8 @@ public class Main {
         Weather weather = new GovermentWeather();
 
         try {
-            weather.refreshData("95650");
-
+            weather.refreshData("95843");
+            System.out.println("zip code = 95843");
             List<WeatherRecord> weatherData = weather.getWeatherData();
 
             for (WeatherRecord entry : weatherData) {
@@ -36,7 +46,19 @@ public class Main {
                 System.out.println("weather = " + entry.getWeather());
 
             }
+            System.out.println();
 
+            weather.refreshData("95111");
+            System.out.println("zip code = 95111");
+            weatherData = weather.getWeatherData();
+
+            for (WeatherRecord entry : weatherData) {
+
+                System.out.println("Period = " + entry.getPeriod());
+                System.out.println(entry.getTempLabel() + " = " + entry.getTemp());
+                System.out.println("weather = " + entry.getWeather());
+
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }

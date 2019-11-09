@@ -7,6 +7,7 @@ public class Location {
     private double latitude;
     private double longitude;
     private String zipcode;
+    private String cityState;
 
     /**
      * Constructor
@@ -15,11 +16,20 @@ public class Location {
      * @param lng     longitude
      * @param zipCode zipcode
      */
+    public Location(double lat, double lng, String zipCode, String cityState) {
+
+        this.latitude = lat;
+        this.longitude = lng;
+        this.zipcode = zipCode;
+        this.cityState = cityState;
+    }
+
     public Location(double lat, double lng, String zipCode) {
 
         this.latitude = lat;
         this.longitude = lng;
         this.zipcode = zipCode;
+        this.cityState = null;
     }
 
     /**
@@ -43,10 +53,19 @@ public class Location {
     /**
      * Get the zip code
      *
-     * @return sipcode
+     * @return zipcode
      */
     public String getZipcode() {
         return zipcode;
+    }
+
+    /**
+     * Gets the location
+     *
+     * @return cityState
+     */
+    public String getCityState() {
+        return cityState;
     }
 
 }

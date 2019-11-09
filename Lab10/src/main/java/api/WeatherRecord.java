@@ -32,7 +32,7 @@ public class WeatherRecord {
      * @param text     text description
      * @param iconLink icon link URL
      */
-    public WeatherRecord(String period, String temp, String weather, String text, String iconLink) {
+    public WeatherRecord(String period, String temp, String weather, String text, String iconLink, String tempLabel) {
         this.period = period;
         this.temp = temp;
         this.weather = weather;
