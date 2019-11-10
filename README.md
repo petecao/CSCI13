@@ -13,3 +13,7 @@ Application of software engineering techniques to the design and development of 
 * Produce intermediate-sized programs using Object-Oriented design principles, with a combination of written and provided code.
 * Identify effective techniques to test, debug, and document larger programs.
 * Write a program that uses recursive algorithms operating on a binary tree.
+
+## Class Syllabus Description
+This is the second Java programming course at Sierra College. In this course we will continue with what you learned in CSCI 12 and expand upon that knowledge. We will cover advanced Java and object oriented topics and learning how the various components fit together.
+
