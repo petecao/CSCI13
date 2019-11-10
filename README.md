@@ -17,3 +17,13 @@ Application of software engineering techniques to the design and development of 
 ## Class Syllabus Description
 This is the second Java programming course at Sierra College. In this course we will continue with what you learned in CSCI 12 and expand upon that knowledge. We will cover advanced Java and object oriented topics and learning how the various components fit together.
 
+### Class Learning Objectives
+
+* Basic data structures including arrays, linked lists, stacks, and hash maps.
+* Unify similar data structures with interfaces.
+* Use the data structures to implement large GUI applications.
+* Develop applications that utilize web-based resources.
+
+## Class Schedule
+* Week 1 and Lab 1: Introduction to IntelliJ and an Industry-Grade IDE
+* Lab 2: 
