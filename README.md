@@ -39,7 +39,7 @@ This is the second Java programming course at Sierra College. In this course we 
     * <b>Week 10</b>: Buttons, Layouts, and Lambdas
 * <b>Lab 4</b>: Weather Lab
     * <b>Week 11</b>: RESTful APIs and JSON vs XML
-    * <b>Week 12</b>: RESTful APIs + GUIs and JavaFX Tables
+    * <b>Week 12</b>: RESTful APIs + GUIs and JavaFX Tables and Reflection/Introspection
     * <b>Week 13</b>: Images
 * <b>Week 14</b>: More Images
 * <b>Week 15</b>: Multithreading
