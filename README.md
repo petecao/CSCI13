@@ -37,5 +37,45 @@ This is the second Java programming course at Sierra College. In this course we 
     * <b>Week 8</b>: Midterm and Design Patterns
     * <b>Week 9</b>: MVC (Model-View-Control) Design Pattern and JavaFX
     * <b>Week 10</b>: Buttons, Layouts, and Lambdas
-    
-    
+* <b>Lab 4</b>: Weather Lab
+    * <b>Week 11</b>: RESTful APIs and JSON vs XML
+    * <b>Week 12</b>: RESTful APIs + GUIs and JavaFX Tables
+    * <b>Week 13</b>: Images
+* <b>Week 14</b>: More Images
+* <b>Week 15</b>: Multithreading
+* <b>Week 16</b>: Final
+
+## Textbook
+<i>Core Java</i> by Cay Horstmann
+
+### Table of Contents
+
+#### Volume I: Fundamentals
+1. An Introduction to Java
+1. The Java Programming Environment
+1. Fundamental Programming Structures in Java
+1. Objects and Classes
+1. Inheritance
+1. Interfaces, Lambda Expressions, and Inner Classes
+1. Exceptions, Assertions and Logging
+1. Generic Programming
+1. Collections
+1. Graphics Programming
+1. Event Handling
+1. User Interface Components with Swing
+1. Deploying Java Applications
+1. Concurrency
+
+#### Volume II: Advanced Features
+1. The Java SE 8 Stream Library
+1. Input and Output
+1. XML
+1. Networking
+1. Database Programming
+1. The Date and Time API
+1. Internationalization
+1. Scripting, Compiling, and Annotation Processing
+1. Security
+1. Advanced Swing
+1. Advanced AWT
+1. Native Methods
