@@ -25,5 +25,17 @@ This is the second Java programming course at Sierra College. In this course we 
 * Develop applications that utilize web-based resources.
 
 ## Class Schedule
-* Week 1 and Lab 1: Introduction to IntelliJ and an Industry-Grade IDE
-* Lab 2: 
+* <b>Week 1 and Lab 1</b>: Introduction to IntelliJ and an Industry-Grade IDE
+* <b>Lab 2</b>: Point and "Line" Lab
+    * <b>Week 2</b>: Introduction to Gradle and JUnit, with a review of methods and classes
+    * <b>Week 3</b>: Review of OOP with ArrayLists
+    * <b>Week 4</b>: The Iterator Interface
+    * <b>Week 5</b>: Interfaces, Abstract Classes, and Generics
+* <b>Lab 3</b>: Calculator Lab
+    * <b>Week 6</b>: String Processing (Parsing), Stacks and Queues, Infix and Postfix, and the Shunting Yard Algorithm
+    * <b>Week 7</b>: Exception Handling
+    * <b>Week 8</b>: Midterm and Design Patterns
+    * <b>Week 9</b>: MVC (Model-View-Control) Design Pattern and JavaFX
+    * <b>Week 10</b>: Buttons, Layouts, and Lambdas
+    
+    
