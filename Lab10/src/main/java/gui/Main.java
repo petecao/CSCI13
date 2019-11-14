@@ -44,9 +44,11 @@ public class Main {
                 System.out.println("Period = " + entry.getPeriod());
                 System.out.println(entry.getTempLabel() + " = " + entry.getTemp());
                 System.out.println("weather = " + entry.getWeather());
-
+                System.out.println("text = " + entry.getText());
+                System.out.println("Image Link = " + entry.getIconLink());
+                System.out.println();
             }
-            System.out.println();
+
 
             weather.refreshData("95111");
             System.out.println("zip code = 95111");
@@ -57,7 +59,9 @@ public class Main {
                 System.out.println("Period = " + entry.getPeriod());
                 System.out.println(entry.getTempLabel() + " = " + entry.getTemp());
                 System.out.println("weather = " + entry.getWeather());
-
+                System.out.println("text = " + entry.getText());
+                System.out.println("Image Link = " + entry.getIconLink());
+                System.out.println();
             }
         } catch (IOException e) {
             e.printStackTrace();

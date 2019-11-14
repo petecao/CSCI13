@@ -69,6 +69,20 @@ public class GovermentWeather implements Weather {
             index++;
         }
 
+        JsonArray text = jsonRoot.getAsJsonObject().get("data").getAsJsonObject().get("text").getAsJsonArray();
+        index = 0;
+        for (JsonElement element : text) {
+            weatherData.get(index).setText(element.getAsString());
+            index++;
+        }
+
+        JsonArray iconLink = jsonRoot.getAsJsonObject().get("data").getAsJsonObject().get("iconLink").getAsJsonArray();
+        index = 0;
+        for (JsonElement element : iconLink) {
+            weatherData.get(index).setIconLink(element.getAsString());
+            index++;
+        }
+
 
     }
 
