@@ -1,0 +1,37 @@
+[
+  {
+    "place_id": "200411289",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https:\/\/osm.org\/copyright",
+    "boundingbox": [
+      "38.730618348605",
+      "38.730718348605",
+      "-121.35098165077",
+      "-121.35088165077"
+    ],
+    "lat": "38.7306683486052",
+    "lon": "-121.350931650775",
+    "display_name": "Placer County, California, 95678, USA",
+    "class": "place",
+    "type": "postcode",
+    "importance": 0.335
+  },
+  {
+    "place_id": "68089242",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https:\/\/osm.org\/copyright",
+    "osm_type": "node",
+    "osm_id": "5758571612",
+    "boundingbox": [
+      "25.000972",
+      "25.001072",
+      "121.48463",
+      "121.48473"
+    ],
+    "lat": "25.001022",
+    "lon": "121.48468",
+    "display_name": "彰化商業銀行, Zhongzheng Road, 平河里, Jisui, Zhonghe District, New Taipei, 23546, ROC",
+    "class": "amenity",
+    "type": "bank",
+    "importance": 0.001,
+    "icon": "https:\/\/nominatim.openstreetmap.org\/images\/mapicons\/money_bank2.p.20.png"
+  }
+]
