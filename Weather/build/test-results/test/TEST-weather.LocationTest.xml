@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="weather.LocationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-17T05:19:10" hostname="LAPTOP-ESQUI78I" time="2.88">
+<testsuite name="weather.LocationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-17T06:44:26" hostname="LAPTOP-ESQUI78I" time="16.541">
   <properties/>
-  <testcase name="testGetLatLgn" classname="weather.LocationTest" time="2.88"/>
+  <testcase name="testGetLatLgn" classname="weather.LocationTest" time="16.541"/>
   <system-out><![CDATA[lat: 38.7951580641397 lgn: -121.223515171373
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

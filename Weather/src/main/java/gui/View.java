@@ -10,9 +10,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
-import weather.Weather;
 import weather.WeatherRecord;
-import weather.GovermentWeather;
 
 import java.util.Arrays;
 import java.util.List;
@@ -39,11 +37,8 @@ public class View {
         textInputField = new TextField();
         textInputField.setText("");
         textInputField.setOnAction(event -> {
-
             // this is executed when the user presses return/enter
-            Weather weather = new GovermentWeather();
-            weather.refreshData(textInputField.getText());
-            setWeatherData(weather.getWeatherData());
+            controller.getWeatherData(textInputField.getText());
         });
 
         // table view
@@ -82,6 +77,9 @@ public class View {
         resetButton.setOnAction(event -> {
             tableView.getItems().clear();
             textInputField.clear();
+            textInputField.setDisable(false);
+            textInputField.setStyle("-fx-text-inner-color: black;");
+
         });
         vBox.getChildren().addAll(sceneTitle, textInputField, tableView, resetButton);
 
@@ -94,6 +92,9 @@ public class View {
     public void showAlert() {
 
         // this is called when we need to display an alert with an error message
+        textInputField.setDisable(true);
+        textInputField.setStyle("-fx-text-inner-color: red;");
+        textInputField.setText("Invalid input. Please reset and try again.");
 
     }
 
@@ -104,7 +105,8 @@ public class View {
      */
     public void setWeatherData(List<WeatherRecord> weatherData) {
         tableView.getItems().setAll(FXCollections.observableArrayList(weatherData));
-        textInputField.setDisable(false);
+        textInputField.setDisable(true);
+        textInputField.setStyle("-fx-text-inner-color: green;");
     }
 
     /**

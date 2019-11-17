@@ -48,7 +48,7 @@ public class Controller implements Weather.Listener {
     public void errorWeatherList() {
 
         // this is a weather listener and called when weather encounters an error refreshing the data
-
+        view.showAlert();
     }
 
     /**
@@ -56,8 +56,7 @@ public class Controller implements Weather.Listener {
      */
     @Override
     public void modifiedWeatherList() {
-
         // this is a weather listener and called when the weather succeeded in refreshing the data
-
+        view.setWeatherData(weather.getWeatherData());
     }
 }
