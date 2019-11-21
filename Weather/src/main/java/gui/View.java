@@ -1,15 +1,19 @@
 package gui;
 
+import javafx.beans.property.SimpleObjectProperty;
 import javafx.collections.FXCollections;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
+import weather.Weather;
 import weather.WeatherRecord;
 
 import java.util.Arrays;
@@ -41,11 +45,29 @@ public class View {
             controller.getWeatherData(textInputField.getText());
         });
 
+
+
+
+
+
         // table view
         tableView = new TableView<>();
         tableView.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
 
-        tableView.setRowFactory(tv -> new TableRow<>());
+        tableView.setRowFactory(tv -> new TableRow<WeatherRecord>() {
+            private Tooltip tooltip = new Tooltip();
+            @Override
+            public void updateItem(WeatherRecord rowToolTip, boolean empty) {
+                super.updateItem(rowToolTip, empty);
+                if (rowToolTip == null) {
+                    setTooltip(null);
+                } else {
+                    tooltip.setText(rowToolTip.getText());
+                    setTooltip(tooltip);
+                }
+            }
+        });
+
 
         /*
          * Setup each of the columns in our table
@@ -63,15 +85,16 @@ public class View {
         weatherCol.setCellValueFactory(new PropertyValueFactory<>("weather"));
         weatherCol.setStyle("-fx-alignment: CENTER;");
 
-        TableColumn<WeatherRecord, String> textCol = new TableColumn<>("Text");
-        textCol.setCellValueFactory(new PropertyValueFactory<>("text"));
-        textCol.setStyle("-fx-alignment: CENTER;");
 
-        TableColumn<WeatherRecord, String> iconLinkCol = new TableColumn<>("iconLink");
-        iconLinkCol.setCellValueFactory(new PropertyValueFactory<>("iconLink"));
-        iconLinkCol.setStyle("-fx-alignment: CENTER;");
+        TableColumn<WeatherRecord, ImageView> iconCol = new TableColumn<>("Icon");
+        iconCol.setCellValueFactory((TableColumn.CellDataFeatures<WeatherRecord,
+                ImageView> cell) -> {
+            String iconLink = cell.getValue().getIconLink();
+            Image iconImage = new Image(iconLink.replace("http://", "https://"));
+            return new SimpleObjectProperty<>(new ImageView(iconImage));
+        });
 
-        tableView.getColumns().addAll(Arrays.asList(periodCol, tempCol, weatherCol, textCol, iconLinkCol));
+        tableView.getColumns().addAll(Arrays.asList(periodCol, tempCol, weatherCol, iconCol));
 
         Button resetButton = new Button("Reset");
         resetButton.setOnAction(event -> {
@@ -81,7 +104,14 @@ public class View {
             textInputField.setStyle("-fx-text-inner-color: black;");
 
         });
-        vBox.getChildren().addAll(sceneTitle, textInputField, tableView, resetButton);
+
+        Button refreshButton = new Button("Refresh Data");
+        refreshButton.setOnAction(event -> {
+            controller.getWeatherData(textInputField.getText());
+        });
+
+
+        vBox.getChildren().addAll(sceneTitle, textInputField, tableView, resetButton, refreshButton);
 
         scene = new Scene(vBox, 400, 400);
     }
@@ -95,6 +125,11 @@ public class View {
         textInputField.setDisable(true);
         textInputField.setStyle("-fx-text-inner-color: red;");
         textInputField.setText("Invalid input. Please reset and try again.");
+
+        Alert a = new Alert(Alert.AlertType.NONE);
+        a.setAlertType(Alert.AlertType.ERROR);
+        a.setContentText("Invalid input. Please reset and try again.");
+        a.show();
 
     }
 

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="weather.LocationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-17T06:44:26" hostname="LAPTOP-ESQUI78I" time="16.541">
+<testsuite name="weather.LocationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-21T04:33:23" hostname="RC-V103-26" time="1.006">
   <properties/>
-  <testcase name="testGetLatLgn" classname="weather.LocationTest" time="16.541"/>
-  <system-out><![CDATA[lat: 38.7951580641397 lgn: -121.223515171373
+  <testcase name="testGetLatLgn" classname="weather.LocationTest" time="1.006"/>
+  <system-out><![CDATA[lat: 38.7953305995677 lgn: -121.224204789228
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
